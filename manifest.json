@@ -1,0 +1,30 @@
+{
+    "name": "MD4Douban",
+    "version": "1.0",
+    "description": "Markdown plugin for Douban!",
+    "permissions": ["activeTab"],
+    "page_action": {
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.douban.com/note/*"],
+        "js": [ 
+            "content/remarkable.min.js",
+            "content/jquery-3.3.1.min.js",
+            "content/utils.js",
+            "content/main.js"
+        ]
+    }],
+    "manifest_version": 2
+}
