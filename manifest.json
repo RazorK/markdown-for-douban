@@ -20,11 +20,19 @@
     "content_scripts": [{
         "matches": ["https://www.douban.com/note/*"],
         "js": [ 
-            "content/remarkable.min.js",
+            "content/vue.js",
             "content/jquery-3.3.1.min.js",
+            "content/remarkable.min.js",
+            "content/constants.js",
             "content/utils.js",
             "content/main.js"
+        ],
+        "css": [
+            "css/markdown.css"
         ]
     }],
+    "web_accessible_resources": [
+        "css/markdown.css"
+    ],
     "manifest_version": 2
 }
