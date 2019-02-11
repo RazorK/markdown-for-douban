@@ -22,4 +22,4 @@ Used tools:
 
 + update the preview page.
 
-+ add bidirection transformation, there's no need to render at view time, maybe at edit time is better.
++ add buttons to stop the extension.
