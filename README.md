@@ -13,3 +13,5 @@ A chrome extension to support markdown in douban notes.
 + update the edit page.
 
 + update the preview page.
+
++ add buttons to stop the extension.
